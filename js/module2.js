@@ -160,3 +160,34 @@
 // }
 
 // 18
+// function calculateTotal(number) {
+//  // Change code below this line
+//     let total = 0;
+//   for (let i = 1; i <= number; i += 1) {
+//        total += i;
+// }
+//   return total;
+//   // Change code above this line
+// }
+// console.log(calculateTotal(3));
+
+// 19
+// const fruits = ['apple', 'plum', 'pear', 'orange'];
+
+// for (let i = 0; i < fruits.length; i += 1) { // Change this line
+//   const fruit = fruits[i]; // Change this line
+//   console.log(fruit);
+// }
+
+// 20
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+// for (let i = 0; i < order.length; i += 1) { 
+//   total += order[i];
+// }
+//   // Change code above this line
+//   return total;
+// }
+
+// 21
