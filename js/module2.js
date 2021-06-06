@@ -191,3 +191,159 @@
 // }
 
 // 21
+// function findLongestWord(string) {
+//   // Change code below this line
+//     const array = string.split(" ");
+//     let biggestWorld = array[0];
+//     for (let world of array) {
+//         if (biggestWorld.length < world.length) {
+//             biggestWorld = world;
+//         }
+//     }
+//     return biggestWorld;
+//   // Change code above this line
+// }
+
+// console.log(findLongestWord("The quick brown fox jumped over the lazy dog"));
+// console.log(findLongestWord("Google do a roll"));
+// console.log(findLongestWord("May the force be with you"));
+
+// 22
+// function createArrayOfNumbers(min, max) {
+//   const numbers = [];
+//   // Change code below this line
+//     for (let i = min; i <= max; i += 1) {
+//         numbers.push(i);
+//     }
+//   // Change code above this line
+//   return numbers;
+// }
+// console.log(createArrayOfNumbers(1, 3));
+
+// 23
+// function filterArray(numbers, value) {
+//    // Change code below this line
+//     const newNumbers = [];
+//     for (let number of numbers) {
+//         if (number > value) {
+//             newNumbers.push(number);
+//         }
+//     }
+//     return newNumbers;
+//   // Change code above this line
+// }
+// console.log(filterArray([1, 2, 3, 4, 5], 3));
+
+// 24
+// function checkFruit(fruit) {
+//   const fruits = ["apple", "plum", "pear", "orange"];
+
+//   return fruits.includes(fruit); // Change this line
+// }
+
+// console.log(checkFruit("plum"));
+// console.log(checkFruit("mandarin"));
+
+// 25
+// Напиши функцию getCommonElements(array1, array2) которая получает два массива произвольной длины
+// в параметры array1 и array2, и возвращает новый массив, состоящий из тех элементов,
+// которые присутствуют в обоих исходных массивах.
+
+// function getCommonElements(array1, array2) {
+//   // Change code below this line
+//     const newArray = [];
+//     for (let i = 0; i < array1.length; i += 1) {
+//         if (array2.includes(array1[i])) {
+//             newArray.push(array1[i]);
+//         }
+//     }
+//     return newArray;    
+//  // Change code above this line
+// }
+// console.log(getCommonElements([1, 2, 3], [2, 4]));
+
+// 26
+// function calculateTotalPrice(order) {
+//   let total = 0;
+//   // Change code below this line
+
+//   for (let elem of order) {
+//     total += elem;
+//   }
+
+//   // Change code above this line
+//   return total;
+// }
+
+// 27
+// function filterArray(numbers, value) {
+//   // Change code below this line
+//   const filteredNumbers = [];
+
+//   for (let number of numbers) {
+//         if (number > value) {
+//             filteredNumbers.push(number);
+//         }
+//     }
+//   return filteredNumbers;
+//   // Change code above this line
+// }
+
+// 28
+// Change code below this line
+// const a = 3 % 3;
+// const b = 4 % 3;
+// const c = 11 % 8;
+// const d = 12 % 7;
+// const e = 8 % 6;
+
+// 29
+// function getEvenNumbers(start, end) {
+//    // Change code below this line
+//     const array = [];
+//   for (let i = start; i <= end; i += 1) {
+//   	if (i % 2 === 0) {
+//     array.push(i);
+//   	}
+//   }
+//     return array;
+//     // Change code above this line
+//   }
+// console.log(getEvenNumbers(2, 5));
+
+// 30
+// const start = 6;
+// const end = 27;
+// let number;
+
+// for (let i = start; i < end; i += 1) {
+//   if (i % 5 === 0) {
+//     number = i;
+//     break;
+//   }
+// }
+
+// 31
+// function findNumber(start, end, divisor) {
+//   // Change code below this line
+//   for (let i = start; i < end; i += 1) {
+//     if (i % divisor === 0) {
+//       return i;
+//     }
+//   }
+//   // Change code above this line
+// }
+
+// 32
+// function includes(array, value) {
+//   // Change code below this line
+//     for (let elem of array) {
+//         if (elem === value) {
+//             return true;
+//         }
+//     }
+//     return false;
+//   // Change code above this line
+// }
+// console.log(includes([1, 2, 3, 4, 5], 3));
+// console.log(includes([1, 2, 3, 4, 5], 17));
