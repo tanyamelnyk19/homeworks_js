@@ -451,3 +451,209 @@
 // // Пиши код выше этой строки
 
 // 34
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   'Ли Танит',
+//   'Бернард Корнуэлл',
+//   'Роберт Шекли',
+//   'Федор Достоевский'
+// ];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+// 35
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// // Пиши код ниже этой строки
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+// console.log('ascendingReleaseDates :>> ', ascendingReleaseDates);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+// console.log('descendingReleaseDates :>> ', descendingReleaseDates);
+
+// 36
+// const authors = [
+//     'Ли Танит',
+//     'Бернард Корнуэлл',
+//     'Роберт Шекли',
+//     'Федор Достоевский',
+//     'Говард Лавкрафт'
+//   ];
+//   // Пиши код ниже этой строки
+  
+// const authorsInAlphabetOrder = [...authors].sort();
+// console.log('authorsInAlphabetOrder :>> ', authorsInAlphabetOrder);
+  
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+//   console.log('authorsInReversedOrder :>> ', authorsInReversedOrder);
+
+// 37
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+//   { title: 'Враг Божий', author: 'Бернард Корнуэлл', rating: 8.67 }
+// ];
+// // Пиши код ниже этой строки
+
+// const sortedByAuthorName = [...books].sort((a, b) => a.author.localeCompare(b.author));
+// console.log('sortedByAuthorName :>> ', sortedByAuthorName);
+
+// const sortedByReversedAuthorName = [...books].sort((a, b) => b.author.localeCompare(a.author));
+// console.log('sortedByReversedAuthorName :>> ', sortedByReversedAuthorName);
+
+// const sortedByAscendingRating = [...books].sort((a, b) => a.rating - b.rating);
+// console.log('sortedByAscendingRating :>> ', sortedByAscendingRating);
+
+// const sortedByDescentingRating = [...books].sort((a, b) => b.rating - a.rating);
+// console.log('sortedByDescentingRating :>> ', sortedByDescentingRating);
+
+// 38
+// Дополни функцию sortByAscendingBalance(users) так, чтобы она возвращала массив пользователей
+// отсортированный по возрастанию их баланса(свойство balance).
+// // Пиши код ниже этой строки
+// const sortByAscendingBalance = users => {
+//   return [...users].sort((a, b) => a.balance - b.balance);
+// };
+// // Пиши код выше этой строки
+
+// 39
+// // Пиши код ниже этой строки
+// const sortByDescendingFriendCount = users => {
+//    return [...users].sort((a, b) => b.friends.length - a.friends.length);
+// };
+// // Пиши код выше этой строки
+
+// 40
+// Пиши код ниже этой строки
+// const sortByName = users => {
+//    return [...users].sort((a, b) => a.name.localeCompare(b.name));
+// };
+// // Пиши код выше этой строки
+
+// 41
+// Дополни код так, чтобы в переменной names получился массив имён авторов в алфавитном порядке,
+// рейтинг книг которых больше значения переменной MIN_BOOK_RATING.
+
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 8.14 },
+//   { title: 'Сны В Ведьмином Доме', author: 'Говард Лавкрафт', rating: 8.67 }
+// ];
+// const MIN_BOOK_RATING = 8;
+// console.log('books :>> ', books);
+// // Пиши код ниже этой строки
+
+// const names = books.filter(book => book.rating > MIN_BOOK_RATING)
+//   .map(book => book.author)
+//   .sort();
+// console.log('names :>> ', names);
+
+// 42
+// Дополни функцию getNamesSortedByFriendCount(users) так,
+// чтобы она возвращала массив имён пользователей отсортированный по возрастанию количества их друзей(свойство friends).
+const arr = [
+  {
+    name: 'Moore Hensley',
+    email: 'moorehensley@indexia.com',
+    eyeColor: 'blue',
+    friends: ['Sharron Pace'],
+    isActive: false,
+    balance: 2811,
+    gender: 'male'
+  },
+  {
+    name: 'Sharlene Bush',
+    email: 'sharlenebush@tubesys.com',
+    eyeColor: 'blue',
+    friends: ['Briana Decker', 'Sharron Pace'],
+    isActive: true,
+    balance: 3821,
+    gender: 'female'
+  },
+  {
+    name: 'Ross Vazquez',
+    email: 'rossvazquez@xinware.com',
+    eyeColor: 'green',
+    friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
+    isActive: false,
+    balance: 3793,
+    gender: 'male'
+  },
+  {
+    name: 'Elma Head',
+    email: 'elmahead@omatom.com',
+    eyeColor: 'green',
+    friends: ['Goldie Gentry', 'Aisha Tran'],
+    isActive: true,
+    balance: 2278,
+    gender: 'female'
+  },
+  {
+    name: 'Carey Barr',
+    email: 'careybarr@nurali.com',
+    eyeColor: 'blue',
+    friends: ['Jordan Sampson', 'Eddie Strong', 'Adrian Cross'],
+    isActive: true,
+    balance: 3951,
+    gender: 'male'
+  },
+  {
+    name: 'Blackburn Dotson',
+    email: 'blackburndotson@furnigeer.com',
+    eyeColor: 'brown',
+    friends: ['Jacklyn Lucas', 'Linda Chapman', 'Adrian Cross', 'Solomon Fokes'],
+    isActive: false,
+    balance: 1498,
+    gender: 'male'
+  },
+  {
+    name: 'Sheree Anthony',
+    email: 'shereeanthony@kog.com',
+    eyeColor: 'brown',
+    friends: ['Goldie Gentry', 'Briana Decker'],
+    isActive: true,
+    balance: 2764,
+    gender: 'female'
+  }
+];
+// // Пиши код ниже этой строки
+// const getNamesSortedByFriendCount = users => {
+//   return [...users].sort((a, b) => a.friends.length - b.friends.length)
+//     .map(user => user.name);
+// };
+
+// console.log(getNamesSortedByFriendCount(arr));
+// // Пиши код выше этой строки
+
+// 43
+// Дополни функцию getSortedFriends(users) так,
+// чтобы она возвращала массив уникальных имён друзей(свойство friends) отсортированный по алфавиту.
+
+// Пиши код ниже этой строки
+// const getSortedFriends = users => {
+//   return users.flatMap(user => user.friends)
+//     .filter((friend, index, array) => array.indexOf(friend) === index)
+//     .sort();
+// };
+// // Пиши код выше этой строки
+// console.log(getSortedFriends(arr));
+
+// 44
+// Дополни функцию getTotalBalanceByGender(users, gender) так, чтобы она возвращала общий баланс пользователей(свойство balance),
+// пол которых(свойство gender) совпадает со значением параметра gender.
+
+  // Пиши код ниже этой строки
+// const getTotalBalanceByGender = (users, gender) => {
+//   return users.filter(user => user.gender === gender)
+//     .reduce((total, user) => total + user.balance, 0);
+// };
+// // Пиши код выше этой строки
+// console.log(getTotalBalanceByGender(arr, 'male'));
+// console.log(getTotalBalanceByGender(arr, 'female'));
